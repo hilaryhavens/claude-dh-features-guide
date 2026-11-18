@@ -71,6 +71,7 @@ c = re.sub(r"<code>", '<code style="font-family:Consolas,Menlo,monospace;backgro
 c = c.replace("<table>", '<div style="overflow-x:auto;" role="region" tabindex="0" aria-label="Scrollable table"><table style="border-collapse:collapse;width:100%;margin:12px 0;">').replace("</table>", "</table></div>")
 c = c.replace("<caption>", '<caption style="text-align:left;font-weight:bold;padding-bottom:6px;">')
 c = c.replace('<th scope="col">', '<th scope="col" style="border:1px solid #ccc;padding:8px;background:#f4f1ec;text-align:left;vertical-align:top;">')
+c = c.replace('<th scope="row">', '<th scope="row" style="border:1px solid #ccc;padding:8px;background:#f4f1ec;text-align:left;vertical-align:top;">')
 c = c.replace("<td>", '<td style="border:1px solid #ccc;padding:8px;text-align:left;vertical-align:top;">')
 c = c.replace("<h2>", '<h2 style="border-top:3px solid #c25e00;padding-top:6px;margin-top:32px;">')
 c = c.replace('<ul class="checklist">', '<ul style="list-style:none;padding-left:0;">')
