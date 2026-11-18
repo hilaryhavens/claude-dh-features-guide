@@ -28,17 +28,17 @@
 <li>Type this and press Enter. If it asks where to install, choose the option for your user account (all your projects).
 <pre><code>/plugin install ai-use-log@ai-use-log</code></pre></li>
 <li>Quit Claude Code and start it again <strong>in your project folder</strong>.</li>
-<li>Ask Claude anything. When it replies, an <code>ai-log</code> folder appears in your project. If it does, you're done.</li>
+<li>Ask Claude anything. When it replies, an <code>ai-log</code> folder appears in your project with a file called <code>AI-Use-Log.html</code> inside. If it does, you're done.</li>
 </ol>
 
 <h3>What gets saved</h3>
 <p>After every reply Claude gives, the plugin copies the whole conversation into <code>ai-log</code>: one <code>.jsonl</code> file per session, named with the date. A folder with the same name holds the work of any Superpowers helper agents. The log includes your prompts, Claude's replies, every file Claude read or changed, the commands it ran, the skills it used, and its Playwright browser actions.</p>
-<p>To read a log, open the <a href="https://hilaryhavens.github.io/ai-use-log/">AI Use Log Viewer</a> and choose your <code>ai-log</code> folder. It runs in your browser, and nothing is uploaded.</p>
+<p>It also rebuilds <code>AI-Use-Log.html</code>, one readable page with every session in it. Double-click it to read your log in your browser; nothing is uploaded. You can also open the <a href="https://hilaryhavens.github.io/ai-use-log/">AI Use Log Viewer</a> and choose your <code>ai-log</code> folder.</p>
 
 <h3>How to submit</h3>
 <ol>
-<li>Right-click your project's <code>ai-log</code> folder and compress it (Windows: <strong>Compress to ZIP file</strong>; Mac: <strong>Compress</strong>).</li>
-<li>Upload the ZIP file to the Canvas assignment along with your project.</li>
+<li>Upload <strong><code>ai-log/AI-Use-Log.html</code></strong> to the Canvas assignment along with your project. That one file is your whole log: there's nothing to zip.</li>
+<li>Can't find it? Type <code>/ai-use-log:submit</code> in Claude Code. It opens the <code>ai-log</code> folder with the file selected.</li>
 </ol>
 <p>Submit all of it, including sessions that went nowhere: they show your process.</p>
 
@@ -51,7 +51,7 @@
 <h3>Limits</h3>
 <ul>
 <li>It records only sessions started <strong>after</strong> you install it, in the folder you started Claude Code in.</li>
-<li>It works only in Claude Code (terminal, desktop app or VS Code). <strong>Using Claude Cowork, Claude on the web or the UT AI Hub instead?</strong> Save each conversation yourself by copying it into a document (or with the app's share or export option, if it has one). Submit those files in place of the <code>ai-log</code> folder.</li>
+<li>It works only in Claude Code (terminal, desktop app or VS Code). <strong>Using Claude Cowork, Claude on the web or the UT AI Hub instead?</strong> Save each conversation yourself by copying it into a document (or with the app's share or export option, if it has one). Submit those files in place of <code>AI-Use-Log.html</code> from the <code>ai-log</code> folder.</li>
 <li>The files are the original records, but they are ordinary files: they are a record of your work, not a lock on it.</li>
 </ul>
 
